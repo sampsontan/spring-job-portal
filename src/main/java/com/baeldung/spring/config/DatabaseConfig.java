@@ -53,6 +53,7 @@ public class DatabaseConfig extends WebMvcConfigurerAdapter {
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		System.out.println("db driver get property == " + env.getProperty("db.driver")); //tmp by sam 20200606
 		dataSource.setDriverClassName(env.getProperty("db.driver"));
 		dataSource.setUrl(env.getProperty("db.url"));
 		dataSource.setUsername(env.getProperty("db.username"));
