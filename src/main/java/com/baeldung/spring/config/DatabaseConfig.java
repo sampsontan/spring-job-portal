@@ -111,6 +111,7 @@ public class DatabaseConfig extends WebMvcConfigurerAdapter {
 
 		// Vendor adapter
 		HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+		vendorAdapter.setDatabasePlatform("org.hibernate.dialect.MySQL5InnoDBDialect"); //by sam 202006131631
 		entityManagerFactory.setJpaVendorAdapter(vendorAdapter);
 
 		// Hibernate properties
