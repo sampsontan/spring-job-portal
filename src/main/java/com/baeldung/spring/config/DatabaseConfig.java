@@ -56,7 +56,7 @@ public class DatabaseConfig extends WebMvcConfigurerAdapter {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");		//tmp by sam dataSource.setDriverClassName(env.getProperty("db.driver"));
 		/** heroku run echo \$JDBC_DATABASE_URL --app xxx 
 		dataSource.setUrl("jdbc:mysql://us-cdbr-east-06.cleardb.net:3306/heroku_03b2b2d3a87770e");	//tmp by sam dataSource.setUrl(env.getProperty("db.url")); **/	
-		dataSource.setUrl("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_03b2b2d3a87770e?user=bd901a86997954&password=71ad2191&reconnect=true");
+		dataSource.setUrl("jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_03b2b2d3a87770e");
 		dataSource.setUsername("bd901a86997954");		//tmp by sam dataSource.setUsername(env.getProperty("db.username"));
 		dataSource.setPassword("71ad2191");			//tmp by sam dataSource.setPassword(env.getProperty("db.password"));
 		/**
